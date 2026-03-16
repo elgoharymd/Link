@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الإختبارات</title>
+    <link rel="preconnect" href="https://www.gstatic.com">
+    <link rel="preconnect" href="https://security-4e69d-default-rtdb.firebaseio.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="loading" id="loading"></div>
+    <div class="error-message" id="errorMessage"></div>
+    
+    <div class="iframe-container">
+        <iframe id="displayFrame" 
+                src="about:blank" 
+                title="Display Frame"
+                sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation"
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <script type="module" src="script.js"></script>
+    <script nomodule src="fallback.js"></script>
+</body>
+</html>
